@@ -71,4 +71,12 @@ public:
 	afx_msg void OnBnClickedBbus1();
 	afx_msg void OnBnClickedBbus2();
 	afx_msg void OnBnClickedBbus3();
+	afx_msg void OnBnClickedButtonzero();
+	afx_msg void OnBnClickedButtonone();
+	afx_msg void OnBnClickedButtontwo();
+	afx_msg void OnBnClickedButtonthree();
+	afx_msg void OnBnClickedButtonfour();
+	afx_msg void OnBnClickedButtonfive();
+	afx_msg void OnBnClickedButtonsix();
+	afx_msg void OnBnClickedButtonseven();
 };

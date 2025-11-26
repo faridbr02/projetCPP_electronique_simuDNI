@@ -118,6 +118,14 @@ BEGIN_MESSAGE_MAP(CProjetcppsimuDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_BBUS1, &CProjetcppsimuDlg::OnBnClickedBbus1)
 	ON_BN_CLICKED(IDC_BBUS2, &CProjetcppsimuDlg::OnBnClickedBbus2)
 	ON_BN_CLICKED(IDC_BBUS3, &CProjetcppsimuDlg::OnBnClickedBbus3)
+	ON_BN_CLICKED(IDC_BUTTONZERO, &CProjetcppsimuDlg::OnBnClickedButtonzero)
+	ON_BN_CLICKED(IDC_BUTTONONE, &CProjetcppsimuDlg::OnBnClickedButtonone)
+	ON_BN_CLICKED(IDC_BUTTONTWO, &CProjetcppsimuDlg::OnBnClickedButtontwo)
+	ON_BN_CLICKED(IDC_BUTTONTHREE, &CProjetcppsimuDlg::OnBnClickedButtonthree)
+	ON_BN_CLICKED(IDC_BUTTONFOUR, &CProjetcppsimuDlg::OnBnClickedButtonfour)
+	ON_BN_CLICKED(IDC_BUTTONFIVE, &CProjetcppsimuDlg::OnBnClickedButtonfive)
+	ON_BN_CLICKED(IDC_BUTTONSIX, &CProjetcppsimuDlg::OnBnClickedButtonsix)
+	ON_BN_CLICKED(IDC_BUTTONSEVEN, &CProjetcppsimuDlg::OnBnClickedButtonseven)
 END_MESSAGE_MAP()
 
 
@@ -583,5 +591,73 @@ void CProjetcppsimuDlg::OnBnClickedBbus3()
 	CString currentText;
 	m_editZone.GetWindowText(currentText);   // récupère le texte actuel
 	currentText += _T(":");                  // ajoute ":" à la suite
+	m_editZone.SetWindowText(currentText);
+}
+
+void CProjetcppsimuDlg::OnBnClickedButtonzero()
+{
+	CString currentText;
+	m_editZone.GetWindowText(currentText);   // récupère le texte actuel
+	currentText += _T("0");                  // ajoute "0" à la suite
+	m_editZone.SetWindowText(currentText);
+}
+
+void CProjetcppsimuDlg::OnBnClickedButtonone()
+{
+	CString currentText;
+	m_editZone.GetWindowText(currentText);   // récupère le texte actuel
+	currentText += _T("1");                  // ajoute "1" à la suite
+	m_editZone.SetWindowText(currentText);
+}
+
+void CProjetcppsimuDlg::OnBnClickedButtontwo()
+{
+	CString currentText;
+	m_editZone.GetWindowText(currentText);   // récupère le texte actuel
+	currentText += _T("2");                  // ajoute "2" à la suite
+	m_editZone.SetWindowText(currentText);
+}
+
+
+void CProjetcppsimuDlg::OnBnClickedButtonthree()
+{
+	CString currentText;
+	m_editZone.GetWindowText(currentText);   // récupère le texte actuel
+	currentText += _T("3");                  // ajoute "3" à la suite
+	m_editZone.SetWindowText(currentText);
+}
+
+void CProjetcppsimuDlg::OnBnClickedButtonfour()
+{
+	CString currentText;
+	m_editZone.GetWindowText(currentText);   // récupère le texte actuel
+	currentText += _T("4");                  // ajoute "4" à la suite
+	m_editZone.SetWindowText(currentText);
+}
+
+
+void CProjetcppsimuDlg::OnBnClickedButtonfive()
+{
+	CString currentText;
+	m_editZone.GetWindowText(currentText);   // récupère le texte actuel
+	currentText += _T("5");                  // ajoute "5" à la suite
+	m_editZone.SetWindowText(currentText);
+}
+
+
+void CProjetcppsimuDlg::OnBnClickedButtonsix()
+{
+	CString currentText;
+	m_editZone.GetWindowText(currentText);   // récupère le texte actuel
+	currentText += _T("6");                  // ajoute "6" à la suite
+	m_editZone.SetWindowText(currentText);
+}
+
+
+void CProjetcppsimuDlg::OnBnClickedButtonseven()
+{
+	CString currentText;
+	m_editZone.GetWindowText(currentText);   // récupère le texte actuel
+	currentText += _T("7");                  // ajoute "7" à la suite
 	m_editZone.SetWindowText(currentText);
 }
