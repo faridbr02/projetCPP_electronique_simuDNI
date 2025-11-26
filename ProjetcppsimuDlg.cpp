@@ -116,6 +116,8 @@ BEGIN_MESSAGE_MAP(CProjetcppsimuDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTON_INCREMENTEMUL, &CProjetcppsimuDlg::OnBnClickedButtonIncrementemul)
 	ON_BN_CLICKED(IDC_BUTTON_DECREMENTEMUL, &CProjetcppsimuDlg::OnBnClickedButtonDecrementemul)
 	ON_BN_CLICKED(IDC_BBUS1, &CProjetcppsimuDlg::OnBnClickedBbus1)
+	ON_BN_CLICKED(IDC_BBUS2, &CProjetcppsimuDlg::OnBnClickedBbus2)
+	ON_BN_CLICKED(IDC_BBUS3, &CProjetcppsimuDlg::OnBnClickedBbus3)
 END_MESSAGE_MAP()
 
 
@@ -561,5 +563,25 @@ void CProjetcppsimuDlg::OnBnClickedButtonDecrementemul()
 
 void CProjetcppsimuDlg::OnBnClickedBbus1()
 {
-	// TODO: ajoutez ici le code de votre gestionnaire de notification de contrôle
+	CString currentText;
+	m_editZone.GetWindowText(currentText);   // récupère le texte actuel
+	currentText += _T("[");                  // ajoute "[" à la suite
+	m_editZone.SetWindowText(currentText);
+}
+
+
+void CProjetcppsimuDlg::OnBnClickedBbus2()
+{
+	CString currentText;
+	m_editZone.GetWindowText(currentText);   // récupère le texte actuel
+	currentText += _T("]");                  // ajoute "]" à la suite
+	m_editZone.SetWindowText(currentText);
+}
+
+void CProjetcppsimuDlg::OnBnClickedBbus3()
+{
+	CString currentText;
+	m_editZone.GetWindowText(currentText);   // récupère le texte actuel
+	currentText += _T(":");                  // ajoute ":" à la suite
+	m_editZone.SetWindowText(currentText);
 }
