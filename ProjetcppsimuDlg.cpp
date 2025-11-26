@@ -115,6 +115,7 @@ BEGIN_MESSAGE_MAP(CProjetcppsimuDlg, CDialogEx)
 	
 	ON_BN_CLICKED(IDC_BUTTON_INCREMENTEMUL, &CProjetcppsimuDlg::OnBnClickedButtonIncrementemul)
 	ON_BN_CLICKED(IDC_BUTTON_DECREMENTEMUL, &CProjetcppsimuDlg::OnBnClickedButtonDecrementemul)
+	ON_BN_CLICKED(IDC_BBUS1, &CProjetcppsimuDlg::OnBnClickedBbus1)
 END_MESSAGE_MAP()
 
 
@@ -556,4 +557,9 @@ void CProjetcppsimuDlg::OnBnClickedButtonDecrementemul()
 	CString str;
 	str.Format(_T("%d"), value);
 	m_mul.SetWindowText(str);
+}
+
+void CProjetcppsimuDlg::OnBnClickedBbus1()
+{
+	// TODO: ajoutez ici le code de votre gestionnaire de notification de contrôle
 }

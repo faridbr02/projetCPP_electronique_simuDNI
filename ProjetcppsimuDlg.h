@@ -68,4 +68,5 @@ public:
 	afx_msg void OnBnClickedButtonIncrementemul();
 	
 	afx_msg void OnBnClickedButtonDecrementemul();
+	afx_msg void OnBnClickedBbus1();
 };
